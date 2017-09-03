@@ -7,7 +7,7 @@ import SearchPage from './SearchPage'
 import './App.css'
 
 class BooksApp extends React.Component {
-
+// Store States of Books
   state = {
     currentlyReading: {
       shelfTitle: 'Currently Reading',
@@ -35,7 +35,7 @@ class BooksApp extends React.Component {
         [originShelfName]: originShelf,
         [targetShelfName]: targetShelf
       })
-
+      // Feedback from BooksAPI
       BooksAPI.update(book.bookReference, targetShelfName)
         .then(() => console.log("Book's shelf updated"))
     }
@@ -46,7 +46,7 @@ class BooksApp extends React.Component {
       [shelfName]: Object.assign({}, this.state[shelfName], { shelfBooks: data })
     })
   }
-  
+
   componentDidMount() {
     BooksAPI.getAll()
       .then(allBooks => {
@@ -64,7 +64,7 @@ class BooksApp extends React.Component {
                 tempRead.push(item)
                 break
               default:
-                console.log('none')
+                //console.log('none')
             }
           })
           this.updateShelfState(tempCurrentlyReading, 'currentlyReading')

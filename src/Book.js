@@ -1,5 +1,7 @@
 import React, { Component } from 'react'
-import BookShelfChanger from './StatusChanger'
+import StatusChanger from './StatusChanger'
+
+// Component for Books.
 
 class Book extends Component {
 
@@ -11,7 +13,7 @@ class Book extends Component {
             {this.props && this.props.imageLinks && <div className="book-cover"
               style={{ width: 128, height: 193, backgroundImage: `url(${this.props.imageLinks.smallThumbnail})` }}>
             </div>}
-            <BookShelfChanger
+            <StatusChanger
               onChangeShelf={this.props.onChangeShelf}
               bookReference={this.props} />
           </div>

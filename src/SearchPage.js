@@ -52,7 +52,7 @@ class SearchPage extends Component {
 
   findBookInShelf = book => {
     let bookFounded = {
-      id: -1,
+      id: 1,
       shelf: ''
     }
     const allSelectedBooks = this.selectedBooks['currentlyReading']
