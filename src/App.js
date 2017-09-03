@@ -46,7 +46,7 @@ class BooksApp extends React.Component {
       [shelfName]: Object.assign({}, this.state[shelfName], { shelfBooks: data })
     })
   }
-
+  
   componentDidMount() {
     BooksAPI.getAll()
       .then(allBooks => {
