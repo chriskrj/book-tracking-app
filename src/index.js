@@ -11,6 +11,4 @@ ReactDOM.render(
   // Router for Searchpage
   <BrowserRouter><App /></BrowserRouter>,
   document.getElementById('root'));
-
-)
 registerServiceWorker();
