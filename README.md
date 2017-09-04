@@ -7,11 +7,12 @@ Of course, you are free to start this project from scratch if you wish! Just be 
 Git Clone the Project:
 ```sh
 git clone https://github.com/chriskrj/book-tracking-app.git
+cd book-tracking-app
 ```
 Setup your Local-Project:
 
-- Run ```npm install``` at the root level of the folder.
-- Navigate to the book-tracking-app folder and run ```npm start``` .
+- Then run ```npm install``` at the root level of the folder.
+- Run ```npm start``` to get started .
 - Go to localhost:3000 in your browser, if its not shown automatically.
 
 
