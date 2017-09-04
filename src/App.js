@@ -8,6 +8,10 @@ import './App.css'
 
 class BooksApp extends React.Component {
 // Store States of Books
+// const wantToRead = books.filter(book => book.shelf === 'wantToRead')
+// const currentlyReading = books.filter(book => book.shelf === 'currentlyReading')
+// const read = books.filter(book => book.shelf === 'read')
+
   state = {
     currentlyReading: {
       shelfTitle: 'Currently Reading',
